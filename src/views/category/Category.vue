@@ -1,0 +1,18 @@
+<template>
+  <div class="category">
+    分类页面
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Category',
+  components: {
+   
+  }
+}
+</script>
+
+<style lang="less">
+
+</style>
