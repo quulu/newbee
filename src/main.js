@@ -2,6 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+// 自动设置rem基准值（html标签
+import 'amfe-flexible'
+
 // 引入vant 
 import './utils/vant'
 import './assets/css/common.less'

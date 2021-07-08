@@ -1,28 +1,31 @@
 <template>
   <div class="home">
-    <my-nav-bar
-      title="标题"
-      left-text="返回"
-      right-text="按钮"
-      qqq = "qqq"
-      left-arrow
-      @click-left="onClickLeft"
-      @click-right="onClickRight"
-    ></my-nav-bar>
+    <home-header></home-header>
+
   </div>
 </template>
 
 <script>
 // 请求
 import { getHomeData, getCartData } from "@/api/homeApi";
+// 组件
+import HomeHeader from './HomeHeader.vue'
 
 export default {
   name: "Home",
   created() {
-    // getHomeData(),
+    getHomeData().then(data => {
+      console.log("首页数据",data);
+      if (data.resultCode == 200) {
+        
+      }
+    })
+
     // getCartData()
   },
-  components: {},
+  components: {
+    HomeHeader
+  },
   methods: {
     onClickLeft() {
 
@@ -33,4 +36,5 @@ export default {
 </script>
 
 <style lang="less">
+
 </style>

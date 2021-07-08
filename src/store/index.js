@@ -5,8 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    token: localStorage.getItem('newbeetoken') || '',
   },
   mutations: {
+    updateToken(state,token) {
+      state.token = token;
+      localStorage.setItem('newbeetoken',token);
+    },
   },
   actions: {
   },

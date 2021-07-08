@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import {Button, NavBar}  from 'vant'
+import {Button, NavBar, Field, Form, Icon}  from 'vant'
 
-[Button, NavBar].forEach(item => {
+[Button, NavBar, Form, Field,Icon].forEach(item => {
   Vue.use(item);
 })

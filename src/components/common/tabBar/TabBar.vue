@@ -30,7 +30,7 @@ export default {
   .tab-bar {
     position: fixed;
     bottom: 0;
-    height: 49px;
+    height: 98px;
     width: 100%;
 
     display: flex;
@@ -40,10 +40,10 @@ export default {
       flex: 1;
       color: #333;
       .iconfont {
-        font-size: 1.25rem;
+        font-size: 40px;
       }
       .title {
-        font-size: 0.9rem;
+        font-size: 30px;
       }
       &.router-link-exact-active {
         color: red;
